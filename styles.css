@@ -6,6 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .main-content {
@@ -18,7 +19,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: blue;
     color: white;
     text-align: center;
     padding: 20px;
