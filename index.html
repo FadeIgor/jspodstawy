@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>przelicznik</title>
+    <title>Moja Pierwsza Strona</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,9 +11,13 @@
     <header>
         <h1>Witamy na Mojej Pierwszej Stronie!</h1>
     </header>
-    
+
+
     <script>
-       switch (jednostka) { 
+        const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
+        const num = parseInt(prompt("wprowadz liczbe"))
+
+        switch (jednostka) { 
         case "km": 
             document.write(num + " przeliczajac mile na km to: " + (num * 1.61)); 
             break; 
