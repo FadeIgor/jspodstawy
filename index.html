@@ -10,14 +10,14 @@
     <script>
         document.write("tak")
 
-        const num1 = parseInt(prompt("wprowadz 1 liczbe"))
-        const num2 = parseInt(prompt("wprowadz 2 liczbe"))
+        const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
+        const num2 = parseInt(prompt("wprowadz liczbe"))
 
-        if(isNaN(num1)){
-            document.write("to nie jest liczba")
-        } else if(isNaN(num2)){
-            document.write("to nie jest liczba")
-        } else document.write("wynik: "+ (num1+num2));
+        if(jednostka == "km"){
+            document.write(num2*1.61)
+        } else if(jednostka == "mil"){
+            document.write(num2*0,62)
+        } else document.write("nie znam jednostki");
 
     </script>
 </body>
