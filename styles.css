@@ -17,10 +17,14 @@ body {
     text-align: center;
 }
 
-.main-content {
-    flex: 1;
-}
 
+
+aside { 
+    width: 33.33%; 
+    padding: 20px; 
+    background-color: #e0e0e0; 
+    box-sizing: border-box; 
+}
 
 footer {
     position: fixed;
