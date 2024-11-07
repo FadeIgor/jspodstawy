@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Pierwsza Strona</title>
+    <title>przelicznik</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,33 +11,21 @@
     <header>
         <h1>Witamy na Mojej Pierwszej Stronie!</h1>
     </header>
+    
+    <script>
+       switch (jednostka) { 
+        case "km": 
+            document.write(num + " przeliczajac mile na km to: " + (num * 1.61)); 
+            break; 
+        case "mil":
+            document.write(num + " przeliczajac km na mile to: " + (num * (62/100))); 
+            break; 
+        default: 
+            document.write("nie znam takiej jednostki"); 
+            break;
 
-    <div class="content-wrapper">
-        <aside>
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-            <p>Lewy aside z miejscem na zdjecie.</p>
-        </aside>
-
-        <div class="main-content">
-            <p>Cześć! To jest przykładowa strona internetowa. Możesz tutaj dodawać treść, zdjęcia, filmy i wszystko, co tylko chcesz.</p>
-
-            <script>
-                const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
-                const num = parseInt(prompt("wprowadz liczbe"))
-
-                if(jednostka == "km"){
-                    document.write(num + " przeliczajac mile na km to: " + (num*(1.61)))
-                } else if(jednostka == "mil"){
-                    document.write(num + " przeliczajac km na mile to: " + (num*(62/100)))
-                } else document.write("nie znam takiej jednostki");
-            </script>
-        </div>
-
-        <aside>
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-            <p>Prawy aside z miejscem na zdjecie.</p>
-        </aside>
-    </div>
+    </script>
+ 
 
     <footer>
         &copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.
