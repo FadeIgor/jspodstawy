@@ -8,16 +8,14 @@
 <body>
     
     <script>
-        document.write("tak")
-
         const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
-        const num2 = parseInt(prompt("wprowadz liczbe"))
+        const num = parseInt(prompt("wprowadz liczbe"))
 
         if(jednostka == "km"){
-            document.write(num2*1.61)
+            document.write(num + "przeliczajac mile na km to: " + num*1.61)
         } else if(jednostka == "mil"){
-            document.write(num2*0,62)
-        } else document.write("nie znam jednostki");
+            document.write(num + "przeliczajac km na mile to: " + num*0,62)
+        } else document.write("nie znam takiej jednostki");
 
     </script>
 </body>
