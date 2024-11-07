@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moja Pierwsza Strona</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <header>
-        <center><h1>Przelicznik jednostek dlugosci </h1></center>
+        <h1>Witamy na Mojej Pierwszej Stronie!</h1>
     </header>
 
-    <aside> <p>reklama</p> </aside>
+    <div class="content-wrapper">
+        <aside>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <p>Lewy aside z miejscem na zdjecie.</p>
+        </aside>
 
-    <script>
-        const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
-        const num = parseInt(prompt("wprowadz liczbe"))
+        <div class="main-content">
+            <p>Cześć! To jest przykładowa strona internetowa. Możesz tutaj dodawać treść, zdjęcia, filmy i wszystko, co tylko chcesz.</p>
 
-        if(jednostka == "km"){
-            document.write(num + " przeliczajac mile na km to: " + (num*(1.61)))
-        } else if(jednostka == "mil"){
-            document.write(num + " przeliczajac km na mile to: " + (num*(62/100)))
-        } else document.write("nie znam takiej jednostki");
-    </script>
+            <script>
+                const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
+                const num = parseInt(prompt("wprowadz liczbe"))
 
-    <aside><p>reklama 2</p> </aside>
+                if(jednostka == "km"){
+                    document.write(num + " przeliczajac mile na km to: " + (num*(1.61)))
+                } else if(jednostka == "mil"){
+                    document.write(num + " przeliczajac km na mile to: " + (num*(62/100)))
+                } else document.write("nie znam takiej jednostki");
+            </script>
+        </div>
+
+        <aside>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <p>Prawy aside z miejscem na zdjecie.</p>
+        </aside>
+    </div>
 
     <footer>
-        Strona zrobiona przez Igora dnia 07.11.2024
+        &copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.
     </footer>
-
-    
 
 </body>
 </html>
