@@ -12,22 +12,20 @@
         <center><h1>Przelicznik jednostek dlugosci </h1></center>
     </header>
 
-    <div class="main-content">
-        <script>
-            const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
-            const num = parseInt(prompt("wprowadz liczbe"))
-
-            if(jednostka == "km"){
-                document.write(num + " przeliczajac mile na km to: " + (num*(1.61)))
-            } else if(jednostka == "mil"){
-                document.write(num + " przeliczajac km na mile to: " + (num*(62/100)))
-            } else document.write("nie znam takiej jednostki");
-        </script>
-    </div>
-
     <footer>
         Strona zrobiona przez Igora dnia 07.11.2024
     </footer>
 
+    <script>
+        const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
+        const num = parseInt(prompt("wprowadz liczbe"))
+
+        if(jednostka == "km"){
+            document.write(num + " przeliczajac mile na km to: " + (num*(1.61)))
+        } else if(jednostka == "mil"){
+            document.write(num + " przeliczajac km na mile to: " + (num*(62/100)))
+        } else document.write("nie znam takiej jednostki");
+    </script>
+    
 </body>
 </html>
