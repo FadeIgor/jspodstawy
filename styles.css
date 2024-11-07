@@ -4,14 +4,11 @@ html, body {
 }
 
 
-header {
-
-    position: fixed;
+header { 
     background-color: blue;
-    color: white;
-    width: 100%;
-    text-align: center;
-
+     color: white; 
+     text-align: center; 
+     padding: 20px
 }
 
 body {
